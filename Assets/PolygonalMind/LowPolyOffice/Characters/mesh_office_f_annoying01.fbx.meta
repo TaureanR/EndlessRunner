@@ -1,0 +1,573 @@
+fileFormatVersion: 2
+guid: 438ef91a5f9e61c45941464eebc462dd
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: be_office_f_annoying_head01
+  - first:
+      1: 100002
+    second: be_office_f_annoying_l_hand01
+  - first:
+      1: 100004
+    second: be_office_f_annoying_l_toes01
+  - first:
+      1: 100006
+    second: be_office_f_annoying_r_hand01
+  - first:
+      1: 100008
+    second: be_office_f_annoying_r_toes01
+  - first:
+      1: 100010
+    second: bind_office_f_annoying_head01
+  - first:
+      1: 100012
+    second: bind_office_f_annoying_hips01
+  - first:
+      1: 100014
+    second: bind_office_f_annoying_l_calf01
+  - first:
+      1: 100016
+    second: bind_office_f_annoying_l_foot01
+  - first:
+      1: 100018
+    second: bind_office_f_annoying_l_forearm01
+  - first:
+      1: 100020
+    second: bind_office_f_annoying_l_shoulder01
+  - first:
+      1: 100022
+    second: bind_office_f_annoying_l_thigh01
+  - first:
+      1: 100024
+    second: bind_office_f_annoying_l_upperarm01
+  - first:
+      1: 100026
+    second: bind_office_f_annoying_neck01
+  - first:
+      1: 100028
+    second: bind_office_f_annoying_r_calf01
+  - first:
+      1: 100030
+    second: bind_office_f_annoying_r_foot01
+  - first:
+      1: 100032
+    second: bind_office_f_annoying_r_forearm01
+  - first:
+      1: 100034
+    second: bind_office_f_annoying_r_shoulder01
+  - first:
+      1: 100036
+    second: bind_office_f_annoying_r_thigh01
+  - first:
+      1: 100038
+    second: bind_office_f_annoying_r_upperarm01
+  - first:
+      1: 100040
+    second: bind_office_f_annoying_spine_a01
+  - first:
+      1: 100042
+    second: bind_office_f_annoying_spine_b01
+  - first:
+      1: 100044
+    second: bind_office_f_annoying_spine_c01
+  - first:
+      1: 100046
+    second: mesh_office_f_annoying01
+  - first:
+      1: 100048
+    second: //RootNode
+  - first:
+      4: 400000
+    second: be_office_f_annoying_head01
+  - first:
+      4: 400002
+    second: be_office_f_annoying_l_hand01
+  - first:
+      4: 400004
+    second: be_office_f_annoying_l_toes01
+  - first:
+      4: 400006
+    second: be_office_f_annoying_r_hand01
+  - first:
+      4: 400008
+    second: be_office_f_annoying_r_toes01
+  - first:
+      4: 400010
+    second: bind_office_f_annoying_head01
+  - first:
+      4: 400012
+    second: bind_office_f_annoying_hips01
+  - first:
+      4: 400014
+    second: bind_office_f_annoying_l_calf01
+  - first:
+      4: 400016
+    second: bind_office_f_annoying_l_foot01
+  - first:
+      4: 400018
+    second: bind_office_f_annoying_l_forearm01
+  - first:
+      4: 400020
+    second: bind_office_f_annoying_l_shoulder01
+  - first:
+      4: 400022
+    second: bind_office_f_annoying_l_thigh01
+  - first:
+      4: 400024
+    second: bind_office_f_annoying_l_upperarm01
+  - first:
+      4: 400026
+    second: bind_office_f_annoying_neck01
+  - first:
+      4: 400028
+    second: bind_office_f_annoying_r_calf01
+  - first:
+      4: 400030
+    second: bind_office_f_annoying_r_foot01
+  - first:
+      4: 400032
+    second: bind_office_f_annoying_r_forearm01
+  - first:
+      4: 400034
+    second: bind_office_f_annoying_r_shoulder01
+  - first:
+      4: 400036
+    second: bind_office_f_annoying_r_thigh01
+  - first:
+      4: 400038
+    second: bind_office_f_annoying_r_upperarm01
+  - first:
+      4: 400040
+    second: bind_office_f_annoying_spine_a01
+  - first:
+      4: 400042
+    second: bind_office_f_annoying_spine_b01
+  - first:
+      4: 400044
+    second: bind_office_f_annoying_spine_c01
+  - first:
+      4: 400046
+    second: //RootNode
+  - first:
+      4: 400048
+    second: mesh_office_f_annoying01
+  - first:
+      21: 2100000
+    second: character
+  - first:
+      43: 4300000
+    second: mesh_office_f_annoying01
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: mesh_office_f_annoying01
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: character
+    second: {fileID: 2100000, guid: 5ab38e3b1ecc9374c9321dfc7ca9d4e7, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 1
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 3.75
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 180
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: bind_office_f_annoying_hips01
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_l_thigh01
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_r_thigh01
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_l_calf01
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_r_calf01
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_l_foot01
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_r_foot01
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_spine_a01
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_spine_b01
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_neck01
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_head01
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_l_shoulder01
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_r_shoulder01
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_l_upperarm01
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_r_upperarm01
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_l_forearm01
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_r_forearm01
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: be_office_f_annoying_l_hand01
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: be_office_f_annoying_r_hand01
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bind_office_f_annoying_spine_c01
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: be_office_f_annoying_l_toes01
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: be_office_f_annoying_r_toes01
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: mesh_office_f_annoying01(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_office_f_annoying01
+      parentName: mesh_office_f_annoying01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_hips01
+      parentName: mesh_office_f_annoying01(Clone)
+      position: {x: -0, y: 1.3899703, z: 0.040599845}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_l_thigh01
+      parentName: bind_office_f_annoying_hips01
+      position: {x: -0.15100974, y: -0.04028592, z: -0.0025437353}
+      rotation: {x: 0.000017603974, y: 0.031930376, z: 0.99948996, w: -0.0005510425}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_l_calf01
+      parentName: bind_office_f_annoying_l_thigh01
+      position: {x: -1.6653344e-17, y: 0.6371575, z: 0}
+      rotation: {x: -0.07503412, y: 0.00005774714, z: -0.00076744205, w: 0.9971807}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_l_foot01
+      parentName: bind_office_f_annoying_l_calf01
+      position: {x: 3.330669e-17, y: 0.6297373, z: 1.2490009e-17}
+      rotation: {x: 0.51603734, y: -0.073854566, z: 0.044721376, w: 0.8522036}
+      scale: {x: 1, y: 1, z: 1}
+    - name: be_office_f_annoying_l_toes01
+      parentName: bind_office_f_annoying_l_foot01
+      position: {x: 0.037499998, y: 0.19702643, z: 0.03300504}
+      rotation: {x: 0.2881012, y: -0.17369297, z: 0.053223345, w: 0.9402105}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_r_thigh01
+      parentName: bind_office_f_annoying_hips01
+      position: {x: 0.15100974, y: -0.04028592, z: -0.003957617}
+      rotation: {x: -0.00001832441, y: 0.033242814, z: 0.99944717, w: 0.0005509245}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_r_calf01
+      parentName: bind_office_f_annoying_r_thigh01
+      position: {x: -0, y: 0.6372668, z: 0}
+      rotation: {x: -0.073028, y: -0.000056195546, z: 0.000767452, w: 0.9973296}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_r_foot01
+      parentName: bind_office_f_annoying_r_calf01
+      position: {x: -0, y: 0.629389, z: -8.326672e-18}
+      rotation: {x: 0.5064076, y: 0.07708881, z: -0.045518648, w: 0.8576344}
+      scale: {x: 1, y: 1, z: 1}
+    - name: be_office_f_annoying_r_toes01
+      parentName: bind_office_f_annoying_r_foot01
+      position: {x: -0.034876008, y: 0.18907268, z: 0.03152072}
+      rotation: {x: 0.295207, y: 0.1695535, z: -0.05331888, w: 0.93875533}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_spine_a01
+      parentName: bind_office_f_annoying_hips01
+      position: {x: -0, y: 0.07145948, z: -0.0050602374}
+      rotation: {x: -0.03533993, y: 0, z: -0, w: 0.99937534}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_spine_b01
+      parentName: bind_office_f_annoying_spine_a01
+      position: {x: -0, y: 0.08357825, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_spine_c01
+      parentName: bind_office_f_annoying_spine_b01
+      position: {x: -0, y: 0.09551779, z: -1.6653344e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_l_shoulder01
+      parentName: bind_office_f_annoying_spine_c01
+      position: {x: -0.07874395, y: 0.09561594, z: -0.0005596227}
+      rotation: {x: 0.5342349, y: -0.4626996, z: 0.5380594, w: 0.45934114}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_l_upperarm01
+      parentName: bind_office_f_annoying_l_shoulder01
+      position: {x: -0, y: 0.16018833, z: -2.664535e-16}
+      rotation: {x: -0.052212015, y: -0.10691707, z: 0.0042621195, w: 0.99288696}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_l_forearm01
+      parentName: bind_office_f_annoying_l_upperarm01
+      position: {x: -0, y: 0.51284146, z: 2.664535e-16}
+      rotation: {x: -0.019326631, y: 0.0028757078, z: -0.037628867, w: 0.9991007}
+      scale: {x: 1, y: 1, z: 1}
+    - name: be_office_f_annoying_l_hand01
+      parentName: bind_office_f_annoying_l_forearm01
+      position: {x: -1.6653344e-17, y: 0.4757148, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_neck01
+      parentName: bind_office_f_annoying_spine_c01
+      position: {x: -0, y: 0.10745763, z: 0.000000009250602}
+      rotation: {x: 0.03534002, y: -0, z: -0, w: 0.99937534}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_head01
+      parentName: bind_office_f_annoying_neck01
+      position: {x: -0, y: 0.045520302, z: -0.011203272}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: be_office_f_annoying_head01
+      parentName: bind_office_f_annoying_head01
+      position: {x: -0, y: 0.46050724, z: -0.11333812}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_r_shoulder01
+      parentName: bind_office_f_annoying_spine_c01
+      position: {x: 0.07874395, y: 0.09565524, z: -0.0011146595}
+      rotation: {x: -0.53222466, y: -0.46443364, z: 0.5398207, w: -0.45785585}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_r_upperarm01
+      parentName: bind_office_f_annoying_r_shoulder01
+      position: {x: -0, y: 0.16018833, z: 2.664535e-16}
+      rotation: {x: -0.052169487, y: 0.0987366, z: -0.004080206, w: 0.99373686}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bind_office_f_annoying_r_forearm01
+      parentName: bind_office_f_annoying_r_upperarm01
+      position: {x: -0, y: 0.51262414, z: 0}
+      rotation: {x: -0.018446203, y: -0.0025567478, z: 0.037695672, w: 0.9991157}
+      scale: {x: 1, y: 1, z: 1}
+    - name: be_office_f_annoying_r_hand01
+      parentName: bind_office_f_annoying_r_forearm01
+      position: {x: 8.326672e-18, y: 0.47565776, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 3.75
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
