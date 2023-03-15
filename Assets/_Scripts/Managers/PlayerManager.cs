@@ -40,6 +40,8 @@ public class PlayerManager : MonoBehaviour
     {
         GameOver();
         StartGame();
+        AddHealth(); //heals every 50 coins
+
         coinsText.text = numberOfCoins.ToString();
     }
 
@@ -87,6 +89,7 @@ public class PlayerManager : MonoBehaviour
             Destroy(startingText);
         }
     }
+
     public void HealthUI()
     {
         // Initialize the heartIcons list
@@ -96,6 +99,7 @@ public class PlayerManager : MonoBehaviour
             heartIcons.Add(heartIcon);
         }
     }
+
     public void TakeFatalDamage()
     {
         gameOver = true;
@@ -106,6 +110,8 @@ public class PlayerManager : MonoBehaviour
         {
             heartIcon.SetActive(false);
         }
+
+        HealthUI(); // Update the heartIcons list
     }
 
     public void TakeDamage()
@@ -121,6 +127,17 @@ public class PlayerManager : MonoBehaviour
         if (currentHealth == 0)
         {
             TakeFatalDamage();
+        }
+    }
+
+    public void AddHealth()
+    {
+        if (numberOfCoins >= 50 && currentHealth < maxHealth)
+        {
+            currentHealth++;
+            numberOfCoins -= 50;
+
+            heartIcons[currentHealth - 1].SetActive(true); // Re-add the last heart icon
         }
     }
 

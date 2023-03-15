@@ -13,11 +13,13 @@ public class CameraController : MonoBehaviour
     private bool isShaking = false;
     private float shakeDuration = 0.2f;
     private float shakeMagnitude = 0.1f;
+    private Vector3 originalPosition;
 
     // Start is called before the first frame update
     void Start()
     {
         SetOffset();
+        originalPosition.y = transform.position.y;
     }
 
     // Update is called once per frame
@@ -28,7 +30,7 @@ public class CameraController : MonoBehaviour
 
     void HandleMove()
     {
-        Vector3 newPosition = new Vector3(horizOffset + target.position.x, transform.position.y, offset.z + target.position.z);
+        Vector3 newPosition = new Vector3(horizOffset + target.position.x, originalPosition.y, offset.z + target.position.z);
         transform.position = Vector3.Lerp(transform.position, newPosition, 15 * Time.deltaTime);
 
         if (isShaking)
@@ -63,6 +65,7 @@ public class CameraController : MonoBehaviour
 
             yield return null;
         }
+        originalPosition.y = 2.7f;
 
         isShaking = false;
     }
