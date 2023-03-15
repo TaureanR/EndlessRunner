@@ -30,6 +30,8 @@ public class PlayerManager : MonoBehaviour
         HealthUI();
 
         gameOver = false;
+        isGameStarted = false;
+
         numberOfCoins = 0;
 
         currentHealth = maxHealth;
