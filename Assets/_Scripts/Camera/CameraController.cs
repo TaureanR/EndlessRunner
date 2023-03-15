@@ -9,6 +9,11 @@ public class CameraController : MonoBehaviour
     private Vector3 offset;
     private float horizOffset;
 
+    // Camera shake variables
+    private bool isShaking = false;
+    private float shakeDuration = 0.2f;
+    private float shakeMagnitude = 0.1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +30,11 @@ public class CameraController : MonoBehaviour
     {
         Vector3 newPosition = new Vector3(horizOffset + target.position.x, transform.position.y, offset.z + target.position.z);
         transform.position = Vector3.Lerp(transform.position, newPosition, 15 * Time.deltaTime);
+
+        if (isShaking)
+        {
+            transform.position += Random.insideUnitSphere * shakeMagnitude;
+        }
     }
 
     void SetOffset()
@@ -34,4 +44,26 @@ public class CameraController : MonoBehaviour
         offset = transform.position - target.position;
     }
 
+    public void ScreenShake()
+    {
+        if (!isShaking)
+        {
+            StartCoroutine(Shake());
+        }
+    }
+
+    IEnumerator Shake()
+    {
+        isShaking = true;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < shakeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+
+            yield return null;
+        }
+
+        isShaking = false;
+    }
 }

@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private int desiredLane = 1; // 0:Left 1:Mid 2:Right
 
     private CharacterController controller;
+    private PlayerManager playerManager;
     private Vector3 direction;
 
     private Animator animator;
@@ -40,11 +41,15 @@ public class PlayerController : MonoBehaviour
         set { forwardSpeed = value; }
     }
 
-
-    void Start()
+    private void Awake()
     {
+        playerManager = FindObjectOfType<PlayerManager>();
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
+    }
+    void Start()
+    {
+        Time.timeScale = 1;
 
         animator.SetBool("isDead", false);
         movementParamId = Animator.StringToHash("Movement");
@@ -71,14 +76,21 @@ public class PlayerController : MonoBehaviour
         if (!PlayerManager.isGameStarted)
         {
             animator.SetBool("isIdle", true);
+            animator.SetBool("isRunning", false);
             return;
         }
         animator.SetBool("isIdle", false);
+
         controller.Move(direction * Time.deltaTime);
     }
 
     void PlayerMovement()
     {
+        if(PlayerManager.gameOver == true)
+        {
+            return;
+        }
+
         direction.z = forwardSpeed;
 
         // Figure out what lane we should be in by input
@@ -153,12 +165,18 @@ public class PlayerController : MonoBehaviour
 
     void GroundedCheck()
     {
-        if (controller.isGrounded && SwipeManager.swipeUp)
+        if (controller.isGrounded && PlayerManager.isGameStarted
+            && PlayerManager.gameOver == false)
         {
-            animator.SetBool(isJumpingParamId, true);
+            animator.SetBool("isRunning", true);
 
-            Debug.Log("I jumped");
-            Jump();
+            if(SwipeManager.swipeUp)
+            {
+                animator.SetBool("isRunning", false);
+                animator.SetBool(isJumpingParamId, true);
+                Jump();
+                Debug.Log("I jumped");
+            }
         }
         else
         {
@@ -184,17 +202,24 @@ public class PlayerController : MonoBehaviour
     {
         if (hit.transform.tag == "HardObstacle")
         {
-            animator.SetBool("isDead", true);
             PlayerManager.gameOver = true;
+            playerManager.TakeFatalDamage();
+            animator.SetBool("isDead", true);
+            animator.SetBool("isRunning", false);
+            
         }
     }
 
-        private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == "Obstacle" && !isTripping)
+        if (other.transform.tag == "Obstacle")
         {
+            playerManager.TakeDamage();
+
             isTripping = true;
             animator.SetBool("isTripping", true);
+            animator.SetBool("isRunning", false);
+
             Debug.Log("I just tripped D:");
             StartCoroutine(ResetTrippingFlag());
         }
@@ -205,5 +230,6 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
         isTripping = false;
         animator.SetBool("isTripping", false);
+        animator.SetBool("isRunning", true);
     }
 }

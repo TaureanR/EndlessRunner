@@ -8,28 +8,24 @@ public class GameManager : MonoBehaviour
 {
     public Text timerTxt;
     private float timer = 0.0f;
-
-    //private PlayerController playerController;
-
-    void Awake()
-    {
-        //DontDestroyOnLoad(this.gameObject);
-    }
+    private bool isTimerRunning = true;
 
     void Start()
     {
         StartCoroutine(Timer());
-        //playerController = playerController.GetComponent<PlayerController>();  
     }
 
-    private void Update()
+    void Update()
     {
-        StopTimer();
+        if (PlayerManager.gameOver)
+        {
+            isTimerRunning = false;
+        }
     }
 
     IEnumerator Timer()
     {
-        while (true)
+        while (isTimerRunning)
         {
             // Increment the timer by the time since the last frame
             timer += Time.deltaTime;
@@ -44,11 +40,15 @@ public class GameManager : MonoBehaviour
 
     void StopTimer()
     {
-        if(!PlayerManager.isGameStarted)
+        if (!PlayerManager.isGameStarted)
         {
             timer = 0.0f;
             StopCoroutine(Timer());
         }
-        
+
+        if (PlayerManager.gameOver == true)
+        {
+            StopCoroutine(Timer());
+        }
     }
 }
