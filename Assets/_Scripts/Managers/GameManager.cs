@@ -25,6 +25,12 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Timer()
     {
+        // Wait until the game is started
+        while (!PlayerManager.isGameStarted)
+        {
+            yield return null;
+        }
+
         while (isTimerRunning)
         {
             // Increment the timer by the time since the last frame

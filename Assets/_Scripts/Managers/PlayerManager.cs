@@ -29,7 +29,6 @@ public class PlayerManager : MonoBehaviour
         cameraController = Camera.main.GetComponent<CameraController>();
         HealthUI();
 
-        isGameStarted = false;
         gameOver = false;
         numberOfCoins = 0;
 
@@ -61,7 +60,6 @@ public class PlayerManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Time.timeScale = 0f;
         gameOverPanel.SetActive(true);
-        Debug.Log("panel should pop up here");
     }
 
 
@@ -102,11 +100,12 @@ public class PlayerManager : MonoBehaviour
     {
         gameOver = true;
         currentHealth = 0;
+        cameraController.ScreenShake();
+
         foreach (GameObject heartIcon in heartIcons)
         {
             heartIcon.SetActive(false);
         }
-        Debug.Log("Deadge");
     }
 
     public void TakeDamage()
