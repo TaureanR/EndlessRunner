@@ -17,6 +17,7 @@ public class PlayerManager : MonoBehaviour
     public GameObject gameOverPanel;
 
     public static int numberOfCoins;
+    public static int coins;
     public Text coinsText;
 
     public static bool isGameStarted;
@@ -33,6 +34,7 @@ public class PlayerManager : MonoBehaviour
         isGameStarted = false;
 
         numberOfCoins = 0;
+        coins = 0;
 
         currentHealth = maxHealth;
     }
@@ -40,10 +42,11 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         GameOver();
         StartGame();
         AddHealth(); //heals every 50 coins
-
+        
         coinsText.text = numberOfCoins.ToString();
     }
 

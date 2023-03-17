@@ -10,16 +10,30 @@ public class GameManager : MonoBehaviour
     private float timer = 0.0f;
     private bool isTimerRunning = true;
 
+    public static int level = 1;
+
     void Start()
     {
+        level = 1;
         StartCoroutine(Timer());
     }
 
     void Update()
     {
+        NextLevel();
         if (PlayerManager.gameOver)
         {
             isTimerRunning = false;
+        }
+        
+    }
+
+    void NextLevel()
+    {
+        if(PlayerManager.coins == 50)
+        {
+            level +=1;
+            PlayerManager.coins = 0;
         }
     }
 

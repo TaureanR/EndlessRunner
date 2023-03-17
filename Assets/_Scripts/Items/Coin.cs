@@ -15,6 +15,7 @@ public class Coin : MonoBehaviour
         if(other.tag == "Player")
         {
             PlayerManager.numberOfCoins += 1;
+            PlayerManager.coins += 1;
             Destroy(gameObject);
         }
     }
