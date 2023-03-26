@@ -4,23 +4,34 @@ using UnityEngine;
 
 public class TileManager : MonoBehaviour
 {
+    // A list of all active tiles in the game
     private List<GameObject> activeTiles = new List<GameObject>();
 
+    // An array of prefabs for each level
     [SerializeField] private GameObject[] tilePrefabs;  // level 1
     [SerializeField] private GameObject[] tilePrefabs2; // level 2
     [SerializeField] private GameObject[] tilePrefabs3; // level 3
 
+    // The spawn location for new tiles and the length of each tile
     [SerializeField] private float zSpawn = 0;
     [SerializeField] private float tileLength = 30;
+
+    // The number of tiles to spawn at the start of the game
     [SerializeField] private int numberOfTiles = 5;
 
+    // The current level of the game
     [SerializeField] private int currentLevel;
+
+    // The prefabs for the current level
     [SerializeField] private GameObject[] currentTilePrefabs;
 
+    // The transform of the player object
     public Transform playerTransform;
 
+    // Called when the object is first created
     void Start()
     {
+        // Set the current tile prefabs based on the current level
         if (currentLevel == 1)
         {
             currentTilePrefabs = tilePrefabs;
@@ -34,6 +45,7 @@ public class TileManager : MonoBehaviour
             currentTilePrefabs = tilePrefabs3;
         }
 
+        // Spawn the initial set of tiles
         for (int i = 0; i < numberOfTiles; i++)
         {
             if (i == 0)
@@ -43,13 +55,16 @@ public class TileManager : MonoBehaviour
         }
     }
 
-
+    // Called every frame
     void Update()
     {
+        // Update the current level
         currentLevel = GameManager.level;
 
+        // Check if a new tile needs to be spawned
         if (playerTransform.position.z - 20 > zSpawn - (numberOfTiles * tileLength))
         {
+            // Update the current tile prefabs if necessary
             if (currentLevel == 1 && currentTilePrefabs != tilePrefabs)
             {
                 currentTilePrefabs = tilePrefabs;
@@ -63,11 +78,13 @@ public class TileManager : MonoBehaviour
                 currentTilePrefabs = tilePrefabs3;
             }
 
+            // Spawn a new tile and delete the oldest one
             SpawnTile(Random.Range(0, currentTilePrefabs.Length));
             DeleteTile();
         }
     }
 
+    // Spawn a new tile at the specified index
     public void SpawnTile(int tileIndex)
     {
         GameObject go = Instantiate(currentTilePrefabs[tileIndex], transform.forward * zSpawn, transform.rotation);
@@ -75,6 +92,7 @@ public class TileManager : MonoBehaviour
         zSpawn += tileLength;
     }
 
+    // Delete the oldest tile
     private void DeleteTile()
     {
         Destroy(activeTiles[0]);
