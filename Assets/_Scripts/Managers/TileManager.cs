@@ -7,6 +7,9 @@ public class TileManager : MonoBehaviour
     // A list of all active tiles in the game
     private List<GameObject> activeTiles = new List<GameObject>();
 
+    // The prefabs for the current level
+    [SerializeField] private GameObject[] currentTilePrefabs;
+
     // An array of prefabs for each level
     [SerializeField] private GameObject[] tilePrefabs;  // level 1
     [SerializeField] private GameObject[] tilePrefabs2; // level 2
@@ -22,8 +25,6 @@ public class TileManager : MonoBehaviour
     // The current level of the game
     [SerializeField] private int currentLevel;
 
-    // The prefabs for the current level
-    [SerializeField] private GameObject[] currentTilePrefabs;
 
     // The transform of the player object
     public Transform playerTransform;

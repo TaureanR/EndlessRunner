@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
         gravity = -22.0f;
     }
 
-
+    
     void Update()
     {
         //handles what lane we should be in (Left 0, Middle 1, Right 2)
@@ -88,6 +88,9 @@ public class PlayerController : MonoBehaviour
     {
         if(PlayerManager.gameOver == true)
         {
+            animator.SetBool("isRunning", false);
+            animator.SetBool("isDead", true);
+            direction.z = 0;
             return;
         }
 
@@ -150,6 +153,7 @@ public class PlayerController : MonoBehaviour
         else
             controller.Move(diff);
     }
+
     public void IncreaseSpeed()
     {
         if(forwardSpeed < maxSpeed)
