@@ -42,11 +42,8 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         GameOver();
-        StartGame();
-        AddHealth(); //heals every 50 coins
-        
+        StartGame();        
         coinsText.text = numberOfCoins.ToString();
     }
 
@@ -137,13 +134,11 @@ public class PlayerManager : MonoBehaviour
 
     public void AddHealth()
     {
-        if (numberOfCoins >= 50 && currentHealth < maxHealth)
-        {
-            currentHealth++;
-            numberOfCoins -= 50;
-
-            heartIcons[currentHealth - 1].SetActive(true); // Re-add the last heart icon
+        if(currentHealth == maxHealth) 
+        { 
+            return; 
         }
+        currentHealth++;
+        heartIcons[currentHealth - 1].SetActive(true); // Re-add the last heart icon
     }
-
 }

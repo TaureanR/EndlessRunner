@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TileManager : MonoBehaviour
 {
+    // The current level of the game
+    [SerializeField] private int currentLevel;
+
     // A list of all active tiles in the game
     private List<GameObject> activeTiles = new List<GameObject>();
 
@@ -21,10 +24,6 @@ public class TileManager : MonoBehaviour
 
     // The number of tiles to spawn at the start of the game
     [SerializeField] private int numberOfTiles = 5;
-
-    // The current level of the game
-    [SerializeField] private int currentLevel;
-
 
     // The transform of the player object
     public Transform playerTransform;

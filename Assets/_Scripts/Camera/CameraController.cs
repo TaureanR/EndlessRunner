@@ -6,14 +6,15 @@ public class CameraController : MonoBehaviour
 {
     private PlayerController playerController;
     public Transform target;
-    private Vector3 offset;
-    private float horizOffset;
-
+    
+    [SerializeField] private Vector3 offset;
+    [SerializeField] private float horizOffset;
+    [SerializeField] private Vector3 originalPosition;
     // Camera shake variables
     private bool isShaking = false;
     private float shakeDuration = 0.2f;
     private float shakeMagnitude = 0.1f;
-    private Vector3 originalPosition;
+    
 
     // Start is called before the first frame update
     void Start()
