@@ -160,7 +160,6 @@ public class PlayerController : MonoBehaviour
         {
             forwardSpeed += 0.1f * Time.deltaTime;
         }
-        
     }
     void Jump()
     {

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using System.IO;
 #if UNITY_EDITOR
@@ -19,6 +20,9 @@ public class DollarRecognizer : MonoBehaviour
         {
             Instance = this;
             LoadAllGestures();
+
+            string gestureList = string.Join(", ", library.Select(g => string.IsNullOrEmpty(g.gestureName) ? g.name : g.gestureName));
+            Debug.Log($"DollarRecognizer initialized with {library.Count} gestures: {gestureList}");
         }
         else Destroy(gameObject);
     }
@@ -213,38 +217,6 @@ public class DollarRecognizer : MonoBehaviour
     }
 
     // ---------- Library Management ----------
-
-    public void SaveGesture(string name, List<Vector2> points)
-    {
-#if UNITY_EDITOR
-        string folderPath = "Assets/Resources/Gestures";
-        if (!AssetDatabase.IsValidFolder(folderPath))
-            AssetDatabase.CreateFolder("Assets/Resources", "Gestures");
-
-        string assetPath = folderPath + "/" + name + ".asset";
-
-        DollarGesture gesture = AssetDatabase.LoadAssetAtPath<DollarGesture>(assetPath);
-        if (gesture == null)
-        {
-            gesture = ScriptableObject.CreateInstance<DollarGesture>();
-            AssetDatabase.CreateAsset(gesture, assetPath);
-        }
-
-        gesture.gestureName = name;
-        gesture.points = new List<Vector2>(points);
-
-        EditorUtility.SetDirty(gesture);
-        AssetDatabase.SaveAssets();
-        AssetDatabase.Refresh();
-
-        if (!library.Contains(gesture))
-            library.Add(gesture);
-
-        Debug.Log($"Saved gesture asset: {assetPath}");
-#else
-        Debug.LogWarning("SaveGesture is editor-only; run in editor to create gesture assets.");
-#endif
-    }
 
     private void LoadAllGestures()
     {

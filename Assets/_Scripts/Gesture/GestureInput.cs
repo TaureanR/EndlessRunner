@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class GestureInput : MonoBehaviour
 {
-    public GestureSaveUI gestureSave;
     private List<Vector2> currentPoints = new List<Vector2>();
     private bool drawing = false;
 
@@ -30,12 +29,5 @@ public class GestureInput : MonoBehaviour
 
         if (drawing)
             currentPoints.Add(Input.mousePosition);
-    }
-
-    // Call this manually to record a new gesture for testing/training
-    public void SaveGesture(string name)
-    {
-        DollarRecognizer.Instance.SaveGesture(name, currentPoints);
-        Debug.Log($"Gesture '{name}' saved.");
     }
 }
